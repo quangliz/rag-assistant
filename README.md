@@ -18,12 +18,7 @@ git clone https://github.com/quangliz/rag-assistant.git
 cd rag-assistant
 ```
 
-2. **Set up environment variables (optional)**
-```bash
-cp .env.example .env  # Add your API keys
-```
-
-3. **Build and run with Docker**
+2. **Build and run with Docker**
 ```bash
 # Build the Docker image
 docker build -t rag-search:latest .
@@ -32,7 +27,7 @@ docker build -t rag-search:latest .
 docker compose up -d
 
 # Run the application (will be available at http://localhost:8501)
-docker run -p 8501:8501 --env-file .env --network host rag-search:latest
+docker run -p 8501:8501 --network host rag-search:latest
 ```
 
 #### Option 2: Manual Setup
